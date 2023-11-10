@@ -7,7 +7,7 @@ def test_date(data):
 
 # tests for timei, timeo, timev to ensure they are in the correct format ^[0-2][0-9]:[0-5][0-9]$
 def test_times(data):
-    ismatch = re.match(r'^[0-2][0-9]:[0-5][0-9]$', data)
+    ismatch = re.match(r'^([0-1][0-9]|[2][0-3]):[0-5][0-9]$', data)
     return True if ismatch else False 
 # tests for uvid to ensure it is in the correct format ^[0-9]{8}$
 def test_uvid(data):
