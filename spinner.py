@@ -3,6 +3,8 @@ import threading
 import itertools
 import time
 
+# I stole this from stackoverflow and made some of my own modifications
+# https://stackoverflow.com/questions/4995733/how-to-create-a-spinning-command-line-cursor
 class Spinner:
 
     def __init__(self, message, delay=0.1):
