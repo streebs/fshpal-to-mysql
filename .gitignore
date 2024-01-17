@@ -2,3 +2,4 @@ __pycache__
 test-files/
 *.csv
 .DS_Store
+.vscode

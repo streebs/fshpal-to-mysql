@@ -15,6 +15,7 @@ def test_uvid(data):
     return True if ismatch else False
 
 #the following tests are for the name, center, and class columns to ensure they are not empty
+# I have implemented these multiple times in the event that the criteria for these columns change
 def test_name(data):
     ismatch = re.match(r'^.+$', data)
     return True if ismatch else False
@@ -27,3 +28,6 @@ def test_class(data):
     ismatch = re.match(r'^.+$', data)
     return True if ismatch else False
 
+def test_reason(data):
+    ismatch = re.match(r'^.+$', data)
+    return True if ismatch else False
